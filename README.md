@@ -1,11 +1,14 @@
 # Elastic Stack Docker Compose
-    logfile -> Filebeat -> Logstash -> Elsticsearch <--> Kibana  
+
+This example of docker compose configuration will help you to start the elastic-stack chain with all apps running on a single machine under Docker.  
+elk-docker chain:  `logfile -> Filebeat -> Logstash -> Elsticsearch <--> Kibana`  
+
 #
     - Running the Elastic Stack on Docker
     - Installing the ELK Stack on Docker
     - ELK stack using Docker Compose
     - Running Kibana on Docker
-    - Running a local kibana in a container
+    - Running a local kibana in a container    
 
 ## Start the stack
  - If you are on Windows, make sure you have at least 4Gb of RAM in `Docker Desktop -> Settings -> Resources -> Advanced -> Memory`
@@ -41,7 +44,3 @@
 - logfile -> Logstash -> Elsticsearch <--> Kibana
 
 
-docker elastic stack    
-elastic-stack  
-elk-docker  
-stack-docker  
