@@ -1,4 +1,4 @@
-# Elastic stack Docker Compose
+# Elastic Stack Docker Compose
     logfile -> Filebeat -> Logstash -> Elsticsearch <--> Kibana  
 #
     - Running the Elastic Stack on Docker
@@ -41,10 +41,7 @@
 - logfile -> Logstash -> Elsticsearch <--> Kibana
 
 
-###### Elastic stack. 
-Docker Compose filebeat logstash kibana elsticsearch  
-Dockerfile filebeat logstash kibana elsticsearch  
+docker elastic stack    
+elastic-stack  
 elk-docker  
-elastic stack-docker   
-elk filebeat docker compose   
-docker compose filebeat logstash  
+stack-docker  
