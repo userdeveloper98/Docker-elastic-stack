@@ -1,0 +1,28 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - '/var/externallogs/*.log'
+
+
+# Uncomment to push containers logs.
+#- type: container
+#  paths:
+#    - '/var/lib/docker/containers/*/*.log'
+#  fields:
+#    idxname: containers
+#- add_docker_metadata:
+#    host: "unix:///var/run/docker.sock"
+
+# Uncomment this to push directrly to elasticsearch instead of logstash
+#output.elasticsearch:
+#  hosts: ["elasticsearch:9200"]
+#  indices:
+#    - index: "filebeat-%{[fields.idxname]}-%{+yyyy.MM.dd}"
+
+# Comment this to disable pushing to logstash
+output.logstash:
+  hosts: ["logstash:5044"]
+
+logging.json: true
+logging.metrics.enabled: false
